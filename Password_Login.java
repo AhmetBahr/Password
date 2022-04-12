@@ -64,12 +64,12 @@ public class Password_Login extends JFrame {
 		//JPasswordField passwordField = new JPasswordField();
 		
 		UserText = new JTextField();
-		UserText.setBounds(156, 51, 179, 33);
+		UserText.setBounds(143, 68, 179, 33);
 		contentPane.add(UserText);
 		UserText.setColumns(10);
 		
 		
-		String b ="",a ="", isim ="";
+		String b ="",a ="";
 		
 		
 		PassText = new JTextField();
@@ -223,7 +223,10 @@ public class Password_Login extends JFrame {
 		JButton LoginButton = new JButton("Login");
 		LoginButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (a.equals("12345") && b.equals("12345")) {
+				String s= UserText.getText();
+				String m = PassText.getText();
+				String n = PassText.getText();
+				if (s.equals("Ahmet") && n.equals("12345")) {
 					FinishText.setText("Giriþ baþarýlý");
 	            } else {
 	            	FinishText.setText("Eþleþmeyen kullanýcý, þifre");

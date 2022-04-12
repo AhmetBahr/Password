@@ -2,3 +2,9 @@ Push 1;
 	Algoritma2 için verilen Password girişi ödevi 
 	
 	giriş kısmında şifreyi "*" şekilde gösteremedim ve girilen isim ve şifre eşleştrime kısmı düzgün çalışmıyor 
+
+Push 2;
+	Yanlış dosya kodunu atığımdan dolayı dosya kodu değiştirildi
+
+Push 3;
+	Login ekranı başarılı bir şekilde yapıldı 
