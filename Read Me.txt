@@ -1,0 +1,4 @@
+Push 1;
+	Algoritma2 için verilen Password girişi ödevi 
+	
+	giriş kısmında şifreyi "*" şekilde gösteremedim ve girilen isim ve şifre eşleştrime kısmı düzgün çalışmıyor 
