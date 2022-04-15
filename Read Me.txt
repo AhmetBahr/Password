@@ -8,3 +8,6 @@ Push 2;
 
 Push 3;
 	Login ekranı başarılı bir şekilde yapıldı 
+
+push 4;
+	Şifre kısmı password text ile değiştirildi show password kutucuğu çalışır hale geldi,giriş başarılı hale getirildi

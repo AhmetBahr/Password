@@ -13,15 +13,16 @@ import javax.swing.JTextField;
 import javax.swing.JCheckBox;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.util.Random;
 import java.awt.event.ActionEvent;
 
 public class Password_Login extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField UserText;
-	private JTextField PassText;
-	private JTextField PassText2;
 	private JTextField FinishText;
+	private JPasswordField PassText;
+	private JPasswordField PassText2;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -64,54 +65,25 @@ public class Password_Login extends JFrame {
 		//JPasswordField passwordField = new JPasswordField();
 		
 		UserText = new JTextField();
-		UserText.setBounds(143, 68, 179, 33);
+		UserText.setBounds(156, 53, 179, 33);
 		contentPane.add(UserText);
 		UserText.setColumns(10);
 		
 		
 		String b ="",a ="";
-		
-		
-		PassText = new JTextField();
-		PassText.setText(a);
-		PassText.setColumns(10);
-		PassText.setBounds(156, 111, 179, 33);
-		contentPane.add(PassText);
-		
-		
-		
-		PassText2 = new JTextField();
-		PassText2.setText(b);
-		PassText2.setBounds(37, 154, 96, 19);
-		contentPane.add(PassText2);
-		PassText2.setColumns(10);
 	
 		
 		
 		
 		
-		JCheckBox JCheck = new JCheckBox("Show Password");
-		JCheck.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				if (e.getSource() == JCheck) {
-		            if (JCheck.isSelected()) {
-		            	//PassText.setEchoChar((char) 0);
-		            } else {
-		            	//PassText.setEchoChar('*');
-		            }
-		 
-		 
-		        }
-			}
-		});
-		JCheck.setBounds(156, 150, 129, 26);
-		contentPane.add(JCheck);
-		contentPane.setLayout(null);
+		
 		
 		JButton b7 = new JButton("7");
 		b7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PassText.setText(PassText.getText()+7);
+				Random r = new Random();
+				int b= (int)(Math.random()*9);
+				PassText.setText(PassText.getText()+b);
 				PassText2.setText(PassText2.getText()+7);
 			}
 		});
@@ -122,7 +94,9 @@ public class Password_Login extends JFrame {
 		JButton b4 = new JButton("4");
 		b4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PassText.setText(PassText.getText()+4);
+				Random r = new Random();
+				int b= (int)(Math.random()*9);
+				PassText.setText(PassText.getText()+b);
 				PassText2.setText(PassText2.getText()+4);
 			}
 		});
@@ -133,7 +107,9 @@ public class Password_Login extends JFrame {
 		JButton b1 = new JButton("1");
 		b1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PassText.setText(PassText.getText()+1);
+				Random r = new Random();
+				int b= (int)(Math.random()*9);
+				PassText.setText(PassText.getText()+b);
 				PassText2.setText(PassText2.getText()+1);
 			}
 		});
@@ -144,7 +120,9 @@ public class Password_Login extends JFrame {
 		JButton b8 = new JButton("8");
 		b8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PassText.setText(PassText.getText()+8);
+				Random r = new Random();
+				int b= (int)(Math.random()*9);
+				PassText.setText(PassText.getText()+b);
 				PassText2.setText(PassText2.getText()+8);
 			}
 		});
@@ -155,7 +133,9 @@ public class Password_Login extends JFrame {
 		JButton b9 = new JButton("9");
 		b9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PassText.setText(PassText.getText()+9);
+				Random r = new Random();
+				int b= (int)(Math.random()*9);
+				PassText.setText(PassText.getText()+b);
 				PassText2.setText(PassText2.getText()+9);
 			}
 		});
@@ -167,7 +147,9 @@ public class Password_Login extends JFrame {
 		JButton b5 = new JButton("5");
 		b5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PassText.setText(PassText.getText()+5);
+				Random r = new Random();
+				int b= (int)(Math.random()*9);
+				PassText.setText(PassText.getText()+b);
 				PassText2.setText(PassText2.getText()+5);
 			}
 		});
@@ -178,7 +160,9 @@ public class Password_Login extends JFrame {
 		JButton b2 = new JButton("2");
 		b2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PassText.setText(PassText.getText()+2);
+				Random r = new Random();
+				int b= (int)(Math.random()*9);
+				PassText.setText(PassText.getText()+b);
 				PassText2.setText(PassText2.getText()+2);
 			}
 		});
@@ -189,7 +173,9 @@ public class Password_Login extends JFrame {
 		JButton b6 = new JButton("6");
 		b6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PassText.setText(PassText.getText()+6);
+				Random r = new Random();
+				int b= (int)(Math.random()*9);
+				PassText.setText(PassText.getText()+b);
 				PassText2.setText(PassText2.getText()+6);
 			}
 		});
@@ -201,7 +187,9 @@ public class Password_Login extends JFrame {
 		JButton b3 = new JButton("3");
 		b3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PassText.setText(PassText.getText()+3);
+				Random r = new Random();
+				int b= (int)(Math.random()*9);
+				PassText.setText(PassText.getText()+b);
 				PassText2.setText(PassText2.getText()+3);
 			}
 		});
@@ -225,7 +213,7 @@ public class Password_Login extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String s= UserText.getText();
 				String m = PassText.getText();
-				String n = PassText.getText();
+				String n = PassText2.getText();
 				if (s.equals("Ahmet") && n.equals("12345")) {
 					FinishText.setText("Giriþ baþarýlý");
 	            } else {
@@ -252,11 +240,44 @@ public class Password_Login extends JFrame {
 		contentPane.add(ResetButton);
 		ResetButton.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		
+		
+		JCheckBox JCheck = new JCheckBox("Show Password");
+		JCheck.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String s= UserText.getText();
+				String m = PassText.getText();
+				String n = PassText2.getText();
+				
+				if(JCheck.isSelected()) {
+					PassText.setEchoChar((char) 0);
+					PassText2.setEchoChar((char) 0);
+				}
+				else {
+					PassText.setEchoChar('*');
+					PassText2.setEchoChar('*');
+				}
+			}
+		});
+		JCheck.setBounds(156, 150, 129, 26);
+		contentPane.add(JCheck);
+		contentPane.setLayout(null);
+		
+		
+		
+		
 		FinishText = new JTextField();
 		FinishText.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		FinishText.setBounds(195, 393, 208, 40);
 		contentPane.add(FinishText);
 		FinishText.setColumns(10);
+		
+		PassText = new JPasswordField();
+		PassText.setBounds(156, 113, 179, 33);
+		contentPane.add(PassText);
+		
+		PassText2 = new JPasswordField();
+		PassText2.setBounds(47, 154, 60, 19);
+		contentPane.add(PassText2);
 		
 		
 		
